@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		String.prototype.filter = function(param){
+			var words = this.split(" ");
+			for(var i=0;i<words.length;i++){
+				if(words[i]==param[0] || words[i]==param[i]){
+					words[i] = " *** ";
+				}
+			}
+			console.log(words.join(" "));
+		};
+		console.log("This house is nice !".filter(['nice','house']));
+	</script>
+</head>
+<body>
+	<p>Check Console.</p>
+</body>
+</html>
