@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <ul id="o">
+        <li date-time="5:17">ECMA6 Video</li>
+        <li date-time="8:22">Node Video</li>
+        <li date-time="3:34">Node Video</li>
+        <li date-time="4:29">ECMA6 Video</li>
+    </ul>
+
+<script>
+    const items = Array.from(document.querySelectorAll('[date-time]'));
+    var item=items.filter(a => a.innerHTML='ECMA6 Video')
+                  .map(a=>a.getAttribute('date-time').split(':'))
+                  .map(a=>parseInt(a[0])*60+parseInt(a[1]))
+                  .reduce((a,b)=>a+b,0);
+console.log(item);
+
+
+
+</script>
+
+</body>
+</html>

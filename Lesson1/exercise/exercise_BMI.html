@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI Calculator</title>
+	<script type="text/javascript">
+		class BMICalculator{
+			constructor(height, weight){
+		  	this.height = height;
+		    this.weight = weight;
+		  }
+		  validate(){
+		  	if(this.height=="" || this.height == undefined || this.weight == "" || this.weight == undefined){
+		  		return false;
+		  	}
+		  	return true;
+		  }
+		  calculateBMI(){
+		  	var bmi = (this.weight/Math.pow(this.height,2));
+		  	document.getElementById("output").innerHTML = bmi;
+		  }
+		} 
+		var btn = document.getElementById("calculate");
+		function calculate(height, weight){		
+		    var height = document.getElementsByName("height")[0].value;
+		    var weight = document.getElementsByName("weight")[0].value;
+		    var val  = new BMICalculator(height, weight);
+		    if(val.validate()){
+		    	val.calculateBMI();
+		    } else{
+		    	alert("Please enter valid values.");
+		    }   
+		  }
+	</script>
+</head>
+<body>
+	<h3>BMI Calculator</h3>
+	<input type="radio" name="unit" value="english"/>METRIC
+	<input type="number" name="height" placeholder="Enter your height (M)"/>
+	<input type="number" name="weight" placeholder="Enter your weight (KG)"/>
+	<button id="calculate" onclick="calculate();">Calculate</button>
+	<div id="output">
+
+	</div>
+</body>
+</html>
