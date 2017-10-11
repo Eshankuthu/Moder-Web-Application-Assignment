@@ -1,0 +1,11 @@
+1. No, because process.nextTick execute it sequence outside event loop then after event loop.
+sys and asys
+
+2. Node.js uses even-driven, non blocking I/O model and run applications in a single thread..
+
+
+4. SetImmediate is part of event loop which schedule a callback to run at check phase, while recursive calls process..ne
+.nextTick take execution outside event loop blocking other flow till the recursive is not done.
+
+5.No
+

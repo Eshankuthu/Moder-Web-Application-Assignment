@@ -1,0 +1,31 @@
+1. What is a middleware in express?
+   Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle.
+
+2. How error handling middlewares differ from other middlewares?
+
+    Error handling are supposed to be in the end.
+
+    Error-handling middleware function is defined in the same way as other middleware function,exprect with four arguments instead of three.
+	app.use(function(err,req,res,next){
+	}{
+
+3. How does use() method differ from all() method in express?
+
+	use()-> All kind of http it is executed
+
+	all()-> Router-> one of more functionality where to continue or jump
+   
+
+4. Is is okay to attach middleware to your applicaiton after handling a request?
+   No, order matter.
+
+5. In Node application we need to call end() method to end request response cycle,do we do same in express?
+   You dont do end by yourself.
+
+6. What is the easiest to secure an express app from http header related vulnerabilities?
+   helmet
+
+7. Create an express application using express-generator and make sure you understand how is it working.
+
+    npn start
+    npn install

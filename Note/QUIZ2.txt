@@ -1,0 +1,21 @@
+1.ES5 no module system.
+  To create a module.
+	IIEF
+2. exports  : whole new object
+	module.export pointing to empty object
+   
+3.cache
+
+
+4. EventListener calls listeners synchronously in the order which they were registered. No output
+
+5. No representation of binary data until EA6, but node.js before EA6 develop.
+   TypedArray Added later 2015
+
+6.Stream is event by itself.
+  Abstract Stream comes from event.
+
+7. file operation asysnchronous
+	loads in memory first and do other operation.
+	streams and pipe  load small size in chunk
+  

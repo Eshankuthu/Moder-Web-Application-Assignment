@@ -1,0 +1,22 @@
+1. Request, 
+
+//Event Emitter
+
+2. Child Process
+
+Spawning worker, Node.js clustering
+clusting for scaling
+
+3. If no extension, it search for same path or it goes to parent until the global path.
+
+npm i<package> -g , By downloading and install package globally
+
+4.  Node Package Manager
+	npm init will create package.json
+For future purpose to know what dependencies you have installed and for auto downloading.
+    --save-dev -> It is for development purpose.
+
+5. Security and Performance 
+
+for devlopment environment view cache is disabled.
+

@@ -1,0 +1,41 @@
+1. Why are NoSQL databases like MongoDB better suited for modern web applicaitons>
+  Supports Non blocking and scalable.
+// Unstructure data that's why more flexible
+//It supports embedding. Query once you can whole collections.
+
+2. What are the two main things MondoDB driver does in a Node.js application?
+
+// bson it converts back into json .
+
+ it make possible to communicate synchronous datase in a non block way.
+ Node communicate MondoDb datase with MondoDB driver
+
+
+3. What is a collection and a docuemnt in MongoDB?
+
+  // document is single object.
+
+ //collection of object.
+
+4. How do you decide between embedding and linking in MogoDB database design?
+
+  //Embedding  
+  most of cases.
+  
+hihgly redundancy scenerio.
+
+//one to many
+many represent a lot
+   linking
+
+
+5. Assuming you have saved date of birth for a person model in your databse. it doen't make sense to have another field in databases called age.
+   But, while programming you often need to compute age.How would mongoose help in this scenario?
+
+// virtual
+
+6. We usually want to encrypt sensitive data like passwords before persisiting into a databse.
+   What would be the right place to do this peration in mongoose application so that you don't have to call encryption method every time?
+
+
+//pre
