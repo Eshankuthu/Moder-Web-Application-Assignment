@@ -1,22 +1,30 @@
- class LikeComponent{
-    likesCount: number;
-    active: boolean;
+ export default class LikeComponent{
+    private _likesCount: number;
+    private  _active: boolean;
 
-    constructor(likesCount:number, active:boolean){
-        this.likesCount= likesCount;
-        this.active=active;
+    constructor() {
+        this._likesCount = 0;
+        this._active = true;
+    }
+    
+    get like(){
+        return this._likesCount;
     }
 
+    get active(){
+        return this._active;
+    }
+
+    set active(value:boolean){
+       this._active=value;
+    }
     onClick(){
-        if(this.active){
-            this.likesCount++;
-            console.log(this.likesCount);
+        if(!this.active){
+            this._likesCount++;
+            console.log("Likes Increase"+ this._likesCount);
         }else{
-            this.likesCount--;
-            console.log(this.likesCount);
+            this._likesCount--;
+            console.log("Likes Decrease" + this._likesCount);
         }
     }
 }
-
-var a = new LikeComponent(10, false);
-a.onClick();
