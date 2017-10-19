@@ -1,0 +1,54 @@
+1. When you create a form using template driven approach, which of  the Angular forms directives are responsible
+for creating FormGroup and FormControl instance.
+	
+	// Angular use instance of this two types.'
+		ngModel for Formcontrol
+		ngModelGroup form FormGroup
+
+	form tag -> formcontrol if you dont have explicity formModelgroup
+	
+	//form
+	//NgModelGroup
+	//Ngmodel
+	
+2.When you create a form using model driven approach , which of the Angular forms directives are used for binding 
+the FormGroup and FOrmCOntrol objects with the form template?
+
+   // FOrmGroup
+   //Formcontrol - form control name
+
+
+	//<form [formGrouo]>
+	// formGroupName
+	//FormContolname
+	
+
+3.When you want to display validation errors for a form control, you check two conditions, if the
+control is touched and it the conrol is valid. What is the reason behind checking first COndition?
+
+   //error shown while loading the form
+
+
+4. You can easily check for the if a control is in valid state by checking it valid property.But,how
+can you show the specific validation error?
+			
+	 //error properties you can find specific error and with the help of ngIf
+
+5.How does Angular help you to style form controls based on its state?
+      
+    by setting class true or false baesed on state for examlle ngtouched true ng untoched false
+	
+
+
+
+6.What is the use of NgModelGroup directive in Angular template driven forms?
+
+// form have group inside it like contact,shiping
+ 
+structure of object that comes out of the form
+
+
+7. How does implementation of async validators differs from sync validators?
+
+  	//difference only in signature: return type shoule be promise or observable of them.
+

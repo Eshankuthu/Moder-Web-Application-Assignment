@@ -1,0 +1,70 @@
+1.How following router pieces work together in Angular?
+
+	a.Configuration
+
+		with URL change it looks for a corresponding Route from which it can determing the component to display.
+
+	b. Router Outlet
+		the router matches URL to corresponding route and component and display in RouterOutletthat we place in view
+		template.
+               
+	c. ROuter Links
+		
+		for navigable link we add RouterLink directive to the anchor tag.
+
+2.What is routing module?
+ 	
+	it is design choice whose value is most obvious when the configuration is complex and includes specialized guard
+	and resolver services.'
+
+	//it is module intention for routing
+
+3.what is the use of ActivatedRoute and Router service?
+
+	// ActivatedRoute->dynaice routing ->current state of Route -> get the state of decision
+
+	//Router Service-> Based on current state it navigate-->Withour actuvatedRoute it will just a static route
+
+
+4.How does observable paramMap helps to achieve component reusability?
+
+	// ngOnInt fires one time 
+	..first time it work fine
+	if u click next time urlchange
+ whole logic depened on change with id
+
+   rsuse it aslo make effiecient
+
+observable with switchmap with asysnchronous
+
+
+if u dont use switchmap ->only show the latest result
+
+
+
+
+5.What are route guards?
+
+	//Route guards are service implementing interface.
+
+
+
+6.What is asynchronous routing? How lazy loading differes from preloading?
+
+//in single page everything loads for firsttime, one startegray bundkle size small(this is not answer for this)
+so to make size small, 
+
+lazy load->admin and user->on demand
+normal user dont have to load admin part
+
+
+shopping cart->in this scnerio user will come here and but also know user don't come immediately so preloading
+
+
+background loading->preloading
+
+
+DisAdvantage single page web
+intial loading takes time
+
+
