@@ -1,0 +1,5 @@
+<div *ngFor="let user of users">
+  {{user.firstname}}--{{user.last_name}}--{{user.email}}<button (click)="destroy(user)">Destroy</button>
+  <button (click)="user.editable=!user.editable">Edit</button>
+  <app-user-edit [user]="user" *ngIf="user.editable"></app-user-edit>
+</div>
